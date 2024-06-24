@@ -30,3 +30,5 @@ Zet voor deze paar lines een # en verwijder de # bij:
 # trader.run_all()
 
 Stap 11 - open nu je alpaca account en je kunt live jou saldo zien.
+
+PS. de certificaten in het mapjes zijn er voor als je problemen hebt met je SSL certificaten met het runnen van de bot
