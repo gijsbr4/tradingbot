@@ -1,0 +1,32 @@
+Welkom bij de tradingbot van Gijs Broeken!
+Ik heb een machine learning tradingbot gemaakt voor het vak webprogramming met als basis de S&P 500 index oftewel SPY.
+Volg onderstaande stappen om de tradingbot voor jou werkend te maken.
+
+Stap 1 - Installeer Python op je PC
+Stap 2 - open VSC
+Stap 3 - open tradingbot.py
+Stap 4 - Maak een virtuele omgeving aan binnen VSC
+Stpa 5 -  Pip install lumibot
+          Pip install datetime
+          Pip install alpaca trade api
+          Pip install timedelta
+Stap 6 - voeg de finbert_utils.py toe aan dezelfde map als de map waar tradingbot.py inzit
+Stap 7 - Maak een account aan op https://app.alpaca.markets/paper/dashboard/overview en start een papertrading account
+Stap 8 - API_KEY = "PKPVNQ861E7IYCK3Q1EK" 
+         API_SECRET = "hbnHCfZ3HvanmHVsb3Yk7yyCr2S1UA00DZkGzJAs" 
+         BASE_URL = "https://paper-api.alpaca.markets/v2" vul hier jou persoonlijke sleutels toe vanuit het alpaca account
+Stap 9 - Wil je zien wat de bot zou hebben gedaan als het 3 jaar geleden aangezet was? Stel dan de start en end time in op de data waar jij benieuwd naar bent en run het bestand
+Stap 10 - Wil je hem live zetten op basis van realtime gegevens?
+strategy.backtest(
+    YahooDataBacktesting, 
+  start_date, 
+  end_date, 
+  parameters={"symbol":"SPY", "cash_at_risk":.5}
+)
+
+Zet voor deze paar lines een # en verwijder de # bij:
+# trader = Trader()
+# trader.add_strategy(strategy)
+# trader.run_all()
+
+Stap 11 - open nu je alpaca account en je kunt live jou saldo zien.
